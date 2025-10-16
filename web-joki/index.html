@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AkselerasiWeb Profesional - Solusi Cepat Pembuatan Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      background: linear-gradient(to bottom right, #eef2ff, #ffffff, #e0e7ff);
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .nav-link {
+      position: relative;
+    }
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #4f46e5;
+      transition: width 0.3s ease-in-out;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/70 backdrop-blur-lg shadow-md z-50 border-b border-indigo-100">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl md:text-3xl font-extrabold text-indigo-600 tracking-tight">Akselerasi<span class="text-gray-900">Web</span></h1>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-8 font-medium">
+        <li><a href="#home" class="nav-link hover:text-indigo-600">Home</a></li>
+        <li><a href="#layanan" class="nav-link hover:text-indigo-600">Layanan</a></li>
+        <li><a href="#skill" class="nav-link hover:text-indigo-600">Skill</a></li>
+        <li><a href="#project" class="nav-link hover:text-indigo-600">Project</a></li>
+        <li><a href="contact.html" class="nav-link hover:text-indigo-600">Kontak</a></li>
+      </ul>
+
+      <!-- Tombol Pesan (Desktop) -->
+      <a href="contact.html" class="hidden md:block bg-indigo-600 text-white px-5 py-2 rounded-xl shadow-lg hover:bg-indigo-700 hover:scale-105 transition-all duration-300">Pesan Sekarang</a>
+
+      <!-- Hamburger Menu (Mobile) -->
+      <button id="menu-btn" class="md:hidden text-indigo-600 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden flex-col items-center space-y-4 py-6 bg-white border-t border-indigo-100 md:hidden">
+      <a href="#home" class="nav-link hover:text-indigo-600">Home</a>
+      <a href="#layanan" class="nav-link hover:text-indigo-600">Layanan</a>
+      <a href="#skill" class="nav-link hover:text-indigo-600">Skill</a>
+      <a href="#project" class="nav-link hover:text-indigo-600">Project</a>
+      <a href="contact.html" class="nav-link hover:text-indigo-600">Kontak</a>
+      <a href="contact.html" class="bg-indigo-600 text-white px-5 py-2 rounded-xl shadow hover:bg-indigo-700 transition">Pesan Sekarang</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-32 pb-20 text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-indigo-100 via-white to-indigo-200 opacity-80"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4" data-aos="fade-up">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 text-gray-800 leading-tight">
+        Solusi Cepat & Profesional <br> untuk <span class="text-indigo-600">Pembuatan Website</span>
+      </h2>
+      <p class="text-gray-600 mb-8 text-base sm:text-lg">Kami siap bantu Anda menyelesaikan proyek web, tugas kuliah, atau website bisnis dengan hasil maksimal dan cepat!</p>
+      <a href="#layanan" class="bg-indigo-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-indigo-700 shadow-lg hover:shadow-indigo-400/50 hover:scale-105 transition-all duration-300">Lihat Layanan</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-20 sm:py-24" id="layanan">
+    <div class="text-center mb-12 sm:mb-16 px-4">
+      <h3 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-3" data-aos="fade-right">💼 Layanan Kami</h3>
+      <p class="text-gray-500" data-aos="fade-right" data-aos-delay="100">Pilih layanan joki web sesuai kebutuhan Anda.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="glass p-8 rounded-3xl shadow-lg hover:-translate-y-3 hover:shadow-xl transition-all duration-500" data-aos="fade-up">
+        <img src="assets/img/service1.png" alt="" class="mx-auto mb-5 w-20 sm:w-24">
+        <h4 class="text-lg sm:text-xl font-semibold mb-3 text-indigo-700">Joki Web Sekolah</h4>
+        <p class="text-gray-700 text-sm sm:text-base">Kami bantu pembuatan website untuk tugas kuliah/sekolah dengan hasil rapi & cepat.</p>
+      </div>
+
+      <div class="glass p-8 rounded-3xl shadow-lg hover:-translate-y-3 hover:shadow-xl transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/img/service2.png" alt="" class="mx-auto mb-5 w-20 sm:w-24">
+        <h4 class="text-lg sm:text-xl font-semibold mb-3 text-indigo-700">Web Bisnis</h4>
+        <p class="text-gray-700 text-sm sm:text-base">Bangun website profesional untuk usaha atau brand Anda dengan desain modern.</p>
+      </div>
+
+      <div class="glass p-8 rounded-3xl shadow-lg hover:-translate-y-3 hover:shadow-xl transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/img/service3.png" alt="" class="mx-auto mb-5 w-20 sm:w-24">
+        <h4 class="text-lg sm:text-xl font-semibold mb-3 text-indigo-700">Joki Project Freelance</h4>
+        <p class="text-gray-700 text-sm sm:text-base">Butuh bantuan debugging, coding, atau revisi project? Tim kami siap bantu!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skill Section -->
+  <section id="skill" class="bg-gradient-to-br from-indigo-50 to-white py-20">
+    <div class="max-w-6xl mx-auto text-center mb-12 px-4">
+      <h3 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up">⚙️ Skill & Keahlian</h3>
+      <p class="text-gray-500" data-aos="fade-up" data-aos-delay="100">Beberapa keahlian utama yang kami kuasai dalam pembuatan website.</p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 max-w-5xl mx-auto text-center px-4 sm:px-6">
+      <div class="p-6 bg-white rounded-2xl shadow-lg hover:-translate-y-2 hover:shadow-indigo-200 transition-all duration-300" data-aos="zoom-in">
+        <img src="assets/img/html.png" class="w-12 mx-auto mb-3" alt="">
+        <h4 class="font-semibold text-gray-700">HTML & CSS</h4>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow-lg hover:-translate-y-2 hover:shadow-indigo-200 transition-all duration-300" data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets/img/js.png" class="w-12 mx-auto mb-3" alt="">
+        <h4 class="font-semibold text-gray-700">JavaScript</h4>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow-lg hover:-translate-y-2 hover:shadow-indigo-200 transition-all duration-300" data-aos="zoom-in" data-aos-delay="200">
+        <img src="assets/img/php.png" class="w-12 mx-auto mb-3" alt="">
+        <h4 class="font-semibold text-gray-700">PHP & MySQL</h4>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow-lg hover:-translate-y-2 hover:shadow-indigo-200 transition-all duration-300" data-aos="zoom-in" data-aos-delay="300">
+        <img src="assets/img/tailwind.png" class="w-12 mx-auto mb-3" alt="">
+        <h4 class="font-semibold text-gray-700">Tailwind CSS</h4>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow-lg hover:-translate-y-2 hover:shadow-indigo-200 transition-all duration-300" data-aos="zoom-in" data-aos-delay="300">
+        <img src="assets/img/tailwind.png" class="w-12 mx-auto mb-3" alt="">
+        <h4 class="font-semibold text-gray-700">React JS</h4>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow-lg hover:-translate-y-2 hover:shadow-indigo-200 transition-all duration-300" data-aos="zoom-in" data-aos-delay="300">
+        <img src="assets/img/tailwind.png" class="w-12 mx-auto mb-3" alt="">
+        <h4 class="font-semibold text-gray-700">Code Interger</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Section -->
+  <section id="project" class="bg-gradient-to-br from-indigo-50 via-white to-indigo-100 py-20">
+    <div class="max-w-6xl mx-auto text-center mb-12 px-4">
+      <h3 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up">🚀 Project yang Telah Dikerjakan</h3>
+      <p class="text-gray-500" data-aos="fade-up" data-aos-delay="100">Beberapa hasil karya kami yang telah selesai dan digunakan oleh klien.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 max-w-6xl mx-auto">
+      <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-2 hover:shadow-indigo-200 transition" data-aos="zoom-in">
+        <img src="asset/img/onlinetoko.png" alt="Project 1" class="w-full h-48 sm:h-52 object-cover">
+        <div class="p-5 text-left">
+          <h4 class="font-bold text-lg text-indigo-700 mb-2">Website E-Commerce</h4>
+          <p class="text-gray-600 text-sm">Website toko online dengan fitur keranjang belanja, login user, dan pembayaran online.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-2 hover:shadow-indigo-200 transition" data-aos="zoom-in" data-aos-delay="100">
+        <img src="asset/img/e-laundry.png" alt="Project 2" class="w-full h-48 sm:h-52 object-cover">
+        <div class="p-5 text-left">
+          <h4 class="font-bold text-lg text-indigo-700 mb-2">Website Laundry (SigmaLaundry)</h4>
+          <p class="text-gray-600 text-sm">Aplikasi laundry berbasis web dengan fitur kasir, transaksi, dan laporan otomatis.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-2 hover:shadow-indigo-200 transition" data-aos="zoom-in" data-aos-delay="200">
+        <img src="asset/img/web-kartar.png" alt="Project 3" class="w-full h-48 sm:h-52 object-cover">
+        <div class="p-5 text-left">
+          <h4 class="font-bold text-lg text-indigo-700 mb-2">Website Karang Taruna</h4>
+          <p class="text-gray-600 text-sm">Website profil dan kegiatan Karang Taruna dengan sistem berita & galeri foto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="bg-gradient-to-r from-indigo-600 to-indigo-700 text-white py-20">
+    <div class="max-w-6xl mx-auto text-center px-4">
+      <h3 class="text-3xl sm:text-4xl font-bold mb-10" data-aos="fade-up">Apa Kata Mereka 💬</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white text-gray-800 p-8 rounded-3xl shadow-lg hover:scale-105 transition" data-aos="fade-up">
+          <p class="italic text-sm sm:text-base">“Pelayanan cepat dan hasil website-nya keren banget! Cocok untuk deadline kampus.”</p>
+          <span class="block mt-4 font-semibold text-indigo-600">- Dimas, Mahasiswa</span>
+        </div>
+
+        <div class="bg-white text-gray-800 p-8 rounded-3xl shadow-lg hover:scale-105 transition" data-aos="fade-up" data-aos-delay="100">
+          <p class="italic text-sm sm:text-base">“Saya pakai jasa JokiWeb buat toko online, hasilnya profesional dan elegan!”</p>
+          <span class="block mt-4 font-semibold text-indigo-600">- Lestari, Pebisnis UMKM</span>
+        </div>
+
+        <div class="bg-white text-gray-800 p-8 rounded-3xl shadow-lg hover:scale-105 transition" data-aos="fade-up" data-aos-delay="200">
+          <p class="italic text-sm sm:text-base">“Sangat komunikatif dan hasil cepat sesuai request. Recommended!”</p>
+          <span class="block mt-4 font-semibold text-indigo-600">- Andi, Freelancer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-10 text-center">
+    <div class="max-w-6xl mx-auto px-4">
+      <h4 class="text-lg sm:text-xl font-bold text-white mb-2">AkselerasiWeb</h4>
+      <p class="text-sm sm:text-base">© 2025 AkselerasiWeb — Jasa Joki Pembuatan Website Profesional</p>
+      <p class="text-xs sm:text-sm mt-2 opacity-80">Dibuat oleh Tim AkselerasiWeb</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+
+    // Menu Toggle
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

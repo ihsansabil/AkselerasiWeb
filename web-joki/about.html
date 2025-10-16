@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami - AkselerasiWeb</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-b from-gray-50 via-white to-indigo-50 text-gray-900 font-sans">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-md z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-extrabold text-indigo-600 tracking-wide">
+        Akselerasi<span class="text-gray-900">Web</span>
+      </h1>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-6 text-sm font-medium">
+        <li><a href="index.html" class="hover:text-indigo-600 transition">Home</a></li>
+        <li><a href="about.html" class="text-indigo-600 font-semibold border-b-2 border-indigo-600 pb-1">Tentang</a></li>
+        <li><a href="services.html" class="hover:text-indigo-600 transition">Layanan</a></li>
+        <li><a href="contact.html" class="hover:text-indigo-600 transition">Kontak</a></li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center">
+        <button id="menu-btn" class="text-gray-900 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="absolute top-full left-0 w-full bg-white/90 backdrop-blur-md shadow-md md:hidden flex flex-col items-center gap-4 py-4 hidden">
+      <li><a href="index.html" class="hover:text-indigo-600 transition">Home</a></li>
+      <li><a href="about.html" class="text-indigo-600 font-semibold">Tentang</a></li>
+      <li><a href="services.html" class="hover:text-indigo-600 transition">Layanan</a></li>
+      <li><a href="contact.html" class="hover:text-indigo-600 transition">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero / About -->
+  <section class="pt-32 pb-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent" data-aos="fade-down">
+      Tentang AkselerasiWeb
+    </h2>
+    <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto text-lg mb-10" data-aos="fade-up" data-aos-delay="200">
+      <span class="font-semibold text-indigo-600">AkselerasiWeb</span> adalah jasa pembuatan website profesional.  
+      Kami melayani tugas sekolah, kuliah, hingga bisnis UMKM dengan hasil cepat dan maksimal.  
+      Tim developer kami berpengalaman, siap membantu Anda mencapai target.
+    </p>
+    <img src="assets/img/team.png" 
+         class="w-full max-w-full md:w-3/4 mx-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-700" 
+         alt="Tim Kami" 
+         data-aos="zoom-in" data-aos-delay="400">
+  </section>
+
+  <!-- Visi & Misi -->
+  <section class="bg-gradient-to-r from-indigo-700 to-indigo-500 text-white py-20 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+    <div class="max-w-6xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative z-10">
+      <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-10" data-aos="fade-up">Visi & Misi Kami</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Visi Card -->
+        <div class="bg-white/10 backdrop-blur-lg p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-500" data-aos="fade-right">
+          <h4 class="text-xl sm:text-2xl font-semibold mb-3 flex items-center justify-center gap-2">🎯 <span>Visi</span></h4>
+          <p class="text-gray-100 leading-relaxed text-sm sm:text-base">
+            Membantu pelajar dan pebisnis memiliki website berkualitas tinggi tanpa ribet, cepat, dan dengan harga bersahabat.
+          </p>
+        </div>
+        <!-- Misi Card -->
+        <div class="bg-white/10 backdrop-blur-lg p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-500" data-aos="fade-left">
+          <h4 class="text-xl sm:text-2xl font-semibold mb-3 flex items-center justify-center gap-2">🚀 <span>Misi</span></h4>
+          <ul class="text-gray-100 text-left list-disc list-inside space-y-2 leading-relaxed text-sm sm:text-base">
+            <li>Memberikan hasil cepat dan profesional.</li>
+            <li>Mendukung berbagai framework modern (PHP, Laravel, Tailwind, dsb).</li>
+            <li>Menjaga kepuasan pelanggan dengan komunikasi terbuka dan pelayanan ramah.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-white text-center px-4 sm:px-6 lg:px-8" data-aos="zoom-in">
+    <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-gray-800">Siap Membuat Website Impian Anda?</h3>
+    <p class="text-gray-600 mb-8 text-sm sm:text-base">Kami bantu realisasikan ide Anda menjadi website profesional dan responsif.</p>
+    <a href="contact.html" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-indigo-700 transition-all shadow-lg hover:shadow-2xl transform hover:scale-105">
+      Hubungi Kami Sekarang
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p>© 2025 <span class="text-indigo-400 font-semibold">AkselerasiWeb</span> — Profesional Website Services</p>
+      <div class="flex flex-col md:flex-row justify-center gap-4 mt-3">
+        <a href="#" class="hover:text-white transition"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="hover:text-white transition"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-white transition"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 900, once: true });</script>
+  <script src="https://kit.fontawesome.com/a2e0e6adf6.js" crossorigin="anonymous"></script>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
